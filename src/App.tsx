@@ -52,7 +52,7 @@ const App = (): JSX.Element => {
             onChangeText={setInputValue}
             keyboardType="number-pad"
             placeholder="Enter amount in Rupees"
-            />
+            style={styles.inputText}/>
           </View>
           {resultValue && (
             <Text style={styles.resultTxt}>
@@ -87,7 +87,7 @@ const App = (): JSX.Element => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#515151',
+    backgroundColor: "#8395A7",
   },
   topContainer: {
     flex: 1,
@@ -96,13 +96,21 @@ const styles = StyleSheet.create({
   },
   resultTxt: {
     fontSize: 32,
-    color: '#000000',
+    color: "#8395A7",
     fontWeight: '800',
   },
-  rupee: {
-    marginRight: 8,
+  inputText: {
+    fontSize: 16,
+    fontFamily: 'palatino',
+    padding: 1,
 
-    fontSize: 22,
+
+
+  },
+  rupee: {
+    marginRight: 4,
+
+    fontSize: 30,
     color: '#000000',
     fontWeight: '800',
   },
@@ -111,12 +119,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   inputAmountField: {
-    height: 40,
+    height: 30,
     width: 200,
     padding: 8,
     borderWidth: 1,
     borderRadius: 4,
-    backgroundColor: '#FFFFFF',
+    borderColor: '#000000',
+    color: "#000000",
+    fontFamily: 'serif',
   },
   bottomContainer: {
     flex: 3,
@@ -124,8 +134,8 @@ const styles = StyleSheet.create({
   button: {
     flex: 1,
 
-    margin: 12,
-    height: 60,
+    margin: 10,
+    height: 50,
 
     borderRadius: 12,
     backgroundColor: '#fff',

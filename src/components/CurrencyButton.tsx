@@ -26,18 +26,24 @@ const CurrencyButton = (props: CurrencyButtonProps): JSX.Element => {
 
 
 const styles = StyleSheet.create({
-    buttonContainer : {
-        alignItems: 'center'
+    buttonContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: "#8395A7",
+      padding: 10,
+      borderRadius: 5,
+      margin: 5,
     },
     flag: {
-        fontSize: 28,
-        color: "#FFFFFF",
-        marginBottom: 4
+      fontSize: 20,
+      color: "#FFFFFF",
+      marginRight: 10,
     },
     country: {
-        fontSize: 14,
-        color: "#2d3436",
-    
-    }
-})
+      fontSize: 15,
+      fontFamily: 'serif',
+      color: "#FFFFFF",
+    },
+  });
 export default CurrencyButton
